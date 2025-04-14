@@ -63,3 +63,30 @@ Create Table LineItem
  Quantity Int Not Null
 )
 
+insert into Vendor(Code, Name, Address, City, State, Zip, PhoneNumber, Email) 
+Values
+	('VND001', 'Alpha Supplies', '123 Maple St.', 'Chicago', 'IL', '60601', '312-555-0123', 'contact@alphasupplies.com'),
+	('VND002', 'Beta Widgets', '456 Oak Ave.', 'Austin', 'TX', '78701', '512-555-0456', 'info@betawidgets.com'),
+	('VND003', 'Gamma Tools', '789 Pine Rd.', 'Orlando', 'FL', '32801', '407-555-0789', 'support@gammatools.com')
+
+
+	
+Select * from vendor	
+	
+Insert into [User] (Username, Password, Firstname, Lastname, Phonenumber, Email, Reviewer, Admin) 
+Values
+	('user101', 'P@ssw0rd12', 'Emma', 'Johnson', '248-555-1234', 'emma.johnson@email.com', 0, 0),
+	('user202', 'SafePass!4', 'Liam', 'Williams', '313-555-5678', 'liam.williams@email.com', 1, 0),
+	('user303', 'Zsecure789', 'Sophia', 'Brown', '734-555-9012', 'sophia.brown@email.com', 0, 1)
+
+Select * From [User]
+
+Insert into Product(VendorID, PartNumber, Name, Price, Unit, PhotoPath)
+Values
+	('2', 'RESIDJNDND', 'Launching Beam Hook', '25.99', 'Not Available', 'Not available'),
+	('3', 'ABCPOTX', 'Plate', '15.49', 'Not Available', 'Not available'),
+	('4', 'ZXFTYES', 'Grinding Machine', '1250.00', 'Not Available', 'Not available')
+
+
+
+Select * from Product
